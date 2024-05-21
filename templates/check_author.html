@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block bar %}
+    <div class="col-md-9" style="justify-content: flex-end;">
+        <h1 class="page-header">查看作品</h1>
+        <div class="panel panel-primary">
+            <div class="panel-heading">作品列表 <i class="fa fa-thumb-tack pull-right"></i></div>
+            <div class="panel-body">
+                <div class="row" style="margin-bottom: 15px">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">搜索</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+{% endblock %}
+{% block main%}
+<table border="1" class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <td>作者</td>
+            <td>作品</td>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>{{ author_name.name }}</td>
+                {% for foo in book %}
+                    <td>{{ foo.name }}</td>
+                {% endfor %}
+            </tr>
+    </tbody>
+</table>
+{% endblock %}
+</div>
+</div>

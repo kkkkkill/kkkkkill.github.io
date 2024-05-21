@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block bar %}
+    <div class="col-md-9" style="justify-content: flex-end;">
+        <h1 class="page-header">作者管理页面</h1>
+        <div class="panel panel-primary">
+            <div class="panel-heading">添加作者 <i class="fa fa-thumb-tack pull-right"></i></div>
+            <div class="panel-body">
+                <div class="row" style="margin-bottom: 15px">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                        </div> <!-
+                    </div>
+                    </div>
+            </div>
+            </div>
+{% endblock %}
+{% block main%}
+    <form method="post">
+    {% csrf_token %}
+    <p>作者名称<input type="text" name="name"></p>
+    <p>作品<select multiple name="books">
+        {% for foo in book %}
+            <option value="{{ foo.id }}">{{ foo.name }}</option>
+        {% endfor %}
+    </select>
+    </p>
+    <p><button type="submit" class="btn">提交</button></p>
+    </form>
+{% endblock %}
+</div>

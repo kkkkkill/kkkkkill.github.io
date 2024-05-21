@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block bar %}
+    <div class="col-md-9" style="justify-content: flex-end;">
+        <h1 class="page-header">图书管理系统</h1>
+        <div class="panel panel-primary">
+            <div class="panel-heading">首页<i class="fa fa-thumb-tack pull-right"></i></div>
+            <div class="panel-body">
+                <div class="row" style="margin-bottom: 15px">
+                </div>
+                </div>
+{% endblock %}
+{% block main%}
+    <div class="container-fluid">
+    <div class="row-fluid">
+            <div class="col-md-2">
+                <a href="/book_list/">图书列表</a>
+            </div>
+            <div class="col-md-2">
+                <a href="/author_list/">作者列表</a>
+            </div>
+            <div class="col-md-2">
+                <a href="/publisher_list/">出版社列表</a>
+            </div>
+    </div>
+</div>
+{% endblock %}
+</div>
+</div>

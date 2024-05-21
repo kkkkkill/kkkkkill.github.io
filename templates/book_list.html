@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block bar %}
+    <div class="col-md-9" style="justify-content: flex-end;">
+        <h1 class="page-header">图书管理页面</h1>
+        <div class="panel panel-primary">
+            <div class="panel-heading">图书列表 <i class="fa fa-thumb-tack pull-right"></i></div>
+            <div class="panel-body">
+                <div class="row" style="margin-bottom: 15px">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">搜索</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right">
+                        <a class="btn btn-success" href="/book_add/">新增图书</a>
+
+                    </div>
+                </div>
+                </div>
+
+{% endblock %}
+{% block main%}
+<table border="1" class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <td>序号</td>
+            <td>书名</td>
+            <td>价格</td>
+            <td>库存</td>
+            <td>出版社</td>
+            <td>操作</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for foo in book %}
+            <tr>
+                <td>{{ foo.id }}</td>
+                <td>{{ foo.name }}</td>
+                <td>{{ foo.price }}</td>
+                <td>{{ foo.inventory }}</td>
+                <td>{{ foo.publisher.name }}</td>
+                <td>
+                    <a href="/book_del/?id={{ foo.id }}">删除</a>
+                    <a href="/book_edit/?id={{ foo.id }}">修改</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+</div>
+</div>

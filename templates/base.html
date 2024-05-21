@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>图书管理系统</title>
+
+    <link rel="stylesheet" href="/static/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <script src="/static/bootstrap-3.4.1-dist/js/jquery-3.6.0.min.js"></script>
+    <script src="/static/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+   <!--分页名称-->
+    <h1 class="text-center">图书管理系统</h1>
+    <!--这是导航栏-->
+    {% include "nav.html" %}
+   <!--这是侧栏-->
+   <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-3">
+            <ul class="nav nav-sidebar">
+                {% block nav %}
+
+                {% endblock %}
+            </ul>
+        </div>
+        </div>
+   </div>
+  <!--标题栏-->
+ {% block bar %}
+
+ {% endblock %}
+ <!--主程序-->
+{% block main%}
+
+{% endblock %}
+</body>
+</html>

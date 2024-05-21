@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block bar %}
+    <div class="col-md-9" style="justify-content: flex-end;">
+        <h1 class="page-header">出版社管理页面</h1>
+        <div class="panel panel-primary">
+            <div class="panel-heading">出版社列表 <i class="fa fa-thumb-tack pull-right"></i></div>
+            <div class="panel-body">
+                <div class="row" style="margin-bottom: 15px">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">搜索</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right">
+                        <a class="btn btn-success" href="/publisher_add/">新增出版社</a>
+
+                    </div>
+                </div>
+                </div>
+
+{% endblock %}
+{% block main%}
+<table border="1" class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <td>序号</td>
+            <td>名称</td>
+            <td>地址</td>
+            <td>操作</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for foo in publisher %}
+            <tr>
+                <td>{{ foo.id }}</td>
+                <td>{{ foo.name }}</td>
+                <td>{{ foo.address }}</td>
+                <td>
+                    <a href="/publisher_del/?id={{ foo.id }}">删除</a>
+                    <a href="/edit/?id={{ foo.id }}">修改</a>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+</div>
+</div>
