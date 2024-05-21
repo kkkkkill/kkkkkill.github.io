@@ -1,0 +1,204 @@
+.new_info{
+    width: 496px;
+    height: 254px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.new_info>.new_i_left{
+    width: 240px;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.new_info>.new_i_right{
+    width: 242px;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.new_info>.new_i_right .new_i_r_i1{
+    width: 242px;
+    height: 180px;
+    background-image: url(../../img/new_content/0\ \(1\).png);
+}
+.new_info>.new_i_right .new_i_r_cover{
+    width: 242px;
+    height: 180px;
+    background-image:url(../../img/new_content/dark70-bg-repeat.png) ;
+    background-repeat: repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+.new_i_right .new_i_r_cover .cover_img{
+    background-image: url(../../img/public_img/index-spr.webp);
+    background-position: -401px 0;
+    width: 236px;
+    height: 174px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+.new_i_right .new_i_r_cover>h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #cdbe91;
+    text-align: center;
+    position: relative;
+    bottom: -57px;
+
+}
+.new_i_right .new_i_r_cover>p{
+    color: #9d9c9c;
+    text-align: center;
+    padding: 2px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: -59px;
+}
+.new_info .new_i_right .new_i_r_i1:hover~.new_i_r_cover{
+    display: block;
+}
+.new_info .new_i_right .new_free{
+    background-image: url(../../img/public_img/index-spr.webp);
+    background-position: -193px -253px;
+    width: 239px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-filter: brightness(1);
+    transition: filter .5s;
+}
+.new_info .new_i_right .new_free_i1{
+    background-image: url(../../img/public_img/index-spr.webp);
+    background-position: -531px -226px;
+    width: 20px;
+    height: 9px;
+    margin: 0 18px;
+}
+.new_info .new_i_right .new_free>span{
+    font-size: 16px;
+    color: #fff;
+}
+.new_info .new_i_right .new_f_arrow{
+    background-position: -342px -99px;
+    box-sizing: border-box;
+    margin-left: 2px;
+    position: relative;
+    left: 0px;
+}
+.new_info .new_i_right .new_free_i2{
+    background-image: url(../../img/public_img/index-spr.webp);
+    background-position: -506px -226px;
+    width: 20px;
+    height: 9px;
+    margin: 0 18px;
+}
+.new_info .new_i_right .new_free:hover{
+    -webkit-filter: brightness(1.16);
+}
+.new_info .new_i_left .new_i_left_top{
+    width: 240px;
+    height: 120px;
+}
+.new_info .new_i_left .new_i_l_cover{
+    position: relative;
+    bottom: -135px;
+    transform: scale(1);
+    transition: .5s;
+    display: none;
+}
+.new_info .new_i_left .new_i_l_cover>video{
+    width: 270px;
+    position: absolute;
+    top: -252px;
+    left: -15px;
+}
+.new_info .new_i_left .new_i_l_cover::after{
+    content: '';
+    display: block;
+    width: 270px;
+    height: 50px;
+    position: absolute;
+    left: -15px;
+    bottom: 67px;
+    background-color: #fff;
+}
+.new_info .new_i_left .new_i_l_cover>p:nth-of-type(1){
+    color: #0b0b0b;
+    font-size: 16px;
+    width: 180px;
+    height: 18px;
+    line-height: 18px;
+    position: absolute;
+    left: -4px;
+    bottom: 95px;
+    z-index: 1;
+}
+.new_info .new_i_left .new_i_l_cover>p:nth-of-type(2){
+    color: #a1a1a2;
+    font-size: 12px;
+    width: 270px;
+    height: 14px;
+    line-height: 14px;
+    position: absolute;
+    left: -4px;
+    bottom: 77px;
+    z-index: 1;
+}
+.new_info .new_i_left .new_i_l_cover>span{
+    color: #bb9a6c;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px #bb9a6c solid;
+    display: block;
+    width: 86px;
+    height: 29px;
+    line-height: 29px;
+    position: absolute;
+    left: 164px;
+    bottom: 79px;
+    z-index: 1;
+    transition:.2s ;
+}
+.new_info .new_i_left .new_i_l_cover>span:hover{
+    background-color: #bb9a6c;
+    color: #fff;
+}
+.new_info .new_i_left .new_i_left_top:hover .new_i_l_cover{
+    display: block;
+    transform: scale(1.1);
+    z-index: 2;
+}
+.new_info .new_i_right .new_free_hove{
+    display: none;
+}
+.new_info .new_i_right .new_free_hove>i{
+    background-image: url(../../img/public_img/index-spr.webp);
+    background-position: -556px -226px;
+    width: 14px;
+    height: 7px;
+    position: absolute;
+    right: 112px;
+    bottom: -12px;
+}
+.new_info .new_i_right .new_free_hove>ul{
+    width: 402px;
+    height: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0px;
+    bottom: -34px;
+}
+.new_info .new_i_right .new_free:hover .new_free_hove{
+    display: block;
+} 

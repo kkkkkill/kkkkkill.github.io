@@ -1,0 +1,92 @@
+/* <!-- 公共样式 
+    1.清除默认样式
+    2.写公共常用样式
+--> */
+
+p,body,html,ul,li,ol,li{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* 针对文字 */
+    font: 12px/1.5 tahoma,'\5FAE\8F6F\96C5\9ED1',sans-serif;
+    background-color: #eee;
+}
+
+a{
+    color: #000;
+    font-size: 12px;
+    /* 文本线：none（不要） */
+    text-decoration: none;
+}
+
+ul{
+    /* 清除小黑点 */
+    list-style: none;
+}
+
+.w_auto{
+    width: 1358px;
+    margin: 0 auto;
+}
+
+.clear_float::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+h1,h2,h3,h4,h5,h6,span{
+    margin: 0;
+}
+.comm_spr{
+    background-image: url(../img/public_img/comm-spr.png);
+    background-repeat: no-repeat;
+}
+.b_load::after{
+    content: '';
+    background-image: url(../img/public_img/下载.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 9px;
+    background-position: center;
+    /* position: absolute; */
+    left: 0px;
+    bottom: -4px;
+}
+.b_load:hover::after{
+    position: absolute;
+}
+.b_load:hover{
+    font-weight:700 ;
+}
+.p_title{
+    height: 35px;
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 400px;
+    color: #0b0b0b;
+    border-left: 5px solid;
+    border-color:#1da6ba ;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.insert_i{
+    display: block;
+    background-repeat: no-repeat;
+}
+.insert_left_arrow{
+    content: '';
+    width: 15px;
+    height: 9px;
+    background-image: url(../img/public_img/comm-spr.png);
+    background-position: -213px -126px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}

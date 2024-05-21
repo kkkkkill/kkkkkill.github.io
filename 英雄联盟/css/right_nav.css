@@ -1,0 +1,47 @@
+.right_nav{
+    width: 70px;
+    height: 304px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 140px;
+    right: 0px;
+}
+
+.right_nav li{
+    color: #92a8ab;
+    text-align: center;
+    margin-top: 14px;
+}
+
+
+.right_nav li div{
+    position: relative;
+    left: 20px;
+}
+.right_nav .rmhd{
+    width: 20px;
+    height: 22px;
+    background-position: -237px -100px;
+}
+.right_nav .spzx{
+    width: 22px;
+    height: 24px;
+    background-position: -260px -100px;
+}
+.right_nav .sszx{
+    width: 24px;
+    height: 24px;
+    background-position: -218px -44px;
+}
+.right_nav .yxzl{
+    width: 22px;
+    height: 24px;
+    background-position: -266px -72px;
+}
+.right_nav .top{
+    width: 32px;
+    height: 32px;
+    background-position: -194px -10px;
+}

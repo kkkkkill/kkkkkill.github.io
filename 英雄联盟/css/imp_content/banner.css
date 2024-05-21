@@ -1,0 +1,31 @@
+.imp_content .top_news{
+    width: 100%;
+    height: 380px;
+}
+.imp_content .banner .b_nav li{
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    background-color: #e3e2e2;
+    font-size: 14px;
+    letter-spacing: 1px;
+} 
+
+.imp_content .banner .b_img li{
+    height: 340px;
+    position: relative;
+    transition: left 0.3s ease; 
+}
+.imp_content .banner .b_nav li:hover{
+    background-color: #f7f6f6;
+    border-bottom: 2px solid #cea861;
+    box-sizing: border-box;
+    color: #ab8e66;
+}
+.imp_content .banner .b_img>ul{
+    display: flex;
+    width: 820px;
+    overflow: hidden;
+}
